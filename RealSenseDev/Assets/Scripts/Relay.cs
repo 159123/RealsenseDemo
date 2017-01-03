@@ -7,7 +7,6 @@ public class Relay : MonoBehaviour
     [SerializeField]
     private GameObject sliderObj;
     private Slider sliderScripts;
-
     [SerializeField]
     private GameObject rightHandsRS;
     private TrackingAction rightHandTracking;
@@ -21,7 +20,6 @@ public class Relay : MonoBehaviour
     {
         sliderScripts = sliderObj.GetComponent<Slider>();
         sliderScripts.value = 0.0f;
-
         rightHandTracking = rightHandsRS.GetComponent<TrackingAction>();
         rightHandHorzScale = rightHandTracking.VirtualWorldBoxDimensions.x;
         rightHandInitPos = rightHandsRS.transform.position;
