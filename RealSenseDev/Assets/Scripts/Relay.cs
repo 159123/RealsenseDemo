@@ -30,5 +30,8 @@ public class Relay : MonoBehaviour
         rightHandRunPos = rightHandsRS.transform.position;
         sliderScripts.value = 0.5f + ((rightHandRunPos.x - rightHandInitPos.x) / rightHandHorzScale);
     }
+    private void LateUpdate()
+    {
 
+    }
 }
